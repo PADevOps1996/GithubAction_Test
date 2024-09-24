@@ -1,16 +1,26 @@
-name: "Test Deployment"
+name: "Test"
 
 on:
   push:
     branches: [main]
 
 jobs:
-  Build:
+  job1:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Say Hello!
-        run: echo "Hello there!"
+      - name: Say Hello from Job 1
+        run: echo "Hello from Job 1!"
+
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Say Hello from Job 2
+        run: echo "Hello from Job 2!"
