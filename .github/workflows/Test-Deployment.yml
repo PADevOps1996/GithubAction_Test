@@ -15,10 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16' # Specify the Node.js version you want
-
-      - name: Install dependencies
-        run: npm install # Adjust this command based on your package manager
+          node-version: '16' # Specify the Node.js version you wan
 
       - name: Run tests
         run: npm test # Adjust this command based on your test script
