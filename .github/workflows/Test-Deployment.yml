@@ -1,21 +1,18 @@
 name: "Test Deployment"
 
 on:
-
-	push:
-
-  		branches: [main]
+  push:
+    branches:
+      -main
 
 jobs:
-
-	deployment:
-
-  	runs-on: ubuntu-latest
+  deployment:
+    runs-on: ubuntu-latest
 
     steps:
 
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Say Hello!
+      - name: Say Hello!
 
-    run: echo "Hello there!"
+        run: echo "Hello there!"
